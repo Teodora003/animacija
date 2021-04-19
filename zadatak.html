@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANIMACIJA</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<style>
+body{
+	background-color: #050210;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+#root{
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	left: 35%;
+	top: 17%;
+	width: 400px;
+	height:400px;
+	background: linear-gradient(#fb5dad, #55fb9f,#b97aff);
+	box-shadow: 0px -20px 60px 1px #fb5dad,12px 0px 20px 1px #55fb9f,-12px 0px 20px 1px #55fb9f,0px 20px 60px 1px #b97aff;
+}
+
+
+
+#root1{
+	width: 350px;
+	height: 350px;
+	background-color: #050210;
+	margin-left: 25px;
+	margin-top: 25px;
+	border-radius: 50%;
+
+}
+#root2{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color:#050210;
+	filter: brightness(2.7);
+	margin-left: auto;
+	margin-right: auto;
+	top:42%;
+}
+
+@keyframes root{
+	from{
+		transform: rotateZ(0deg);	
+	}
+	to{
+		transform: rotateZ(360deg);	
+	}
+
+
+}
+
+#root{
+	animation-duration: 0.3s;
+	animation-name: root;
+	animation-iteration-count:infinite;
+
+}
+
+@keyframes root2{
+	form{
+		width: 50px;
+		height: 50px;
+
+	}
+	to{
+		width: 350px;
+		height: 350px;
+		top:0%;
+	}
+
+}
+
+#root2{
+	animation-duration: 1.2s;
+	animation-name: root2;
+	animation-iteration-count:infinite;
+} 
+
+
+</style>
+<body>
+	<div id="root">
+		<div id="root1">
+			<div id="root2"></div>
+		</div>	
+	</div>	
+</body>
+</html>
